@@ -34,6 +34,7 @@ def exchange_code(code: str):
   print(response)
   credentials = response.json()
   access_token = credentials['access_token']
+
   response = requests.get("https://discord.com/api/v6/users/@me", headers={
     'Authorization': "Bearer " + access_token
   })
