@@ -20,8 +20,8 @@ def discord_login_redirect(request):
 
 def exchange_code(code: str):
   data = {
-    "client_id": "1042553640726057010",
-    "client_secret": "_Wfhn42a094Cxp4CmyLfdb7rMOQAAPZr",
+    "client_id": "",
+    "client_secret": "",
     "grant_type": "authorization_code",
     "code": code,
     "redirect_uri": "http://localhost:8000/oauth2/login/redirect",
